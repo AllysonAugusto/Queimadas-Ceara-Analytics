@@ -85,7 +85,7 @@ if __name__ == "__main__":
   if pasta:
     print("\nDownload e extração concluidos.")
 
-    dfs = ler_csv_extraido(pasta, ano)
+    dfs = ler_csv_extraido(pasta)
     if dfs:
       print("-=-=-=-=" * 30)
       print(dfs[0].head())
