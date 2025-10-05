@@ -5,7 +5,7 @@
 ![PowerBI](https://img.shields.io/badge/PowerBI-suportado-orange)
 
 ![Capa do Projeto](./imagens/capa_powerbi.png)  
-*Visualização de monitoramento interativo das queimadas no Ceará.*
+*Capa do Projeto.*
 
 ---
 
