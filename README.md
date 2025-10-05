@@ -1,49 +1,60 @@
-# queimadas-ceara-analytics
+# Queimadas Ceará Analytics
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![PowerBI](https://img.shields.io/badge/PowerBI-suportado-orange)
 
-**Tema:** Monitoramento das Queimadas e Impactos Ambientais no Ceará com Python + Power BI
+![Capa do Projeto](./imagens/capa_powerbi.png)  
+*Visualização de monitoramento interativo das queimadas no Ceará.*
 
-### 🎯 Objetivo do Projeto
-Desenvolver um sistema de monitoramento interativo de queimadas no Ceará, utilizando Python para coletar e tratar dados e Power BI para visualização interativa, permitindo:
+---
+
+## 🎯 Objetivo do Projeto
+Desenvolver um **sistema de monitoramento interativo de queimadas** no Ceará, utilizando **Python** para coleta e tratamento de dados e **Power BI** para visualização, permitindo:
 
 - Identificar áreas mais afetadas por queimadas.  
 - Acompanhar evolução temporal (ano a ano, mês a mês).  
 - Relacionar queimadas com variáveis climáticas (chuva, seca, temperatura).  
-- Promover a conscientização ambiental e apoio a políticas públicas.
+- Apoiar conscientização ambiental e políticas públicas.
 
-### 🔹 Fontes de Dados
-- **INPE – Programa Queimadas** (dados de focos de calor via satélite)  
-- **INMET – Instituto Nacional de Meteorologia** (chuvas, temperatura, umidade no Ceará)  
-- **IBGE** (dados populacionais para cruzar impacto humano)
+---
 
-### ⚙️ Etapas Técnicas
-1. **Coleta de Dados (Python)**
-   - Usar API do INPE Queimadas para extrair dados de focos ativos no Ceará.  
-   - Usar `pandas` ou `polars` para organizar e tratar as informações (data, localização geográfica, intensidade).  
-   - Extrair dados climáticos do INMET para correlacionar seca/chuva com incêndios.
+## 🔹 Fontes de Dados
+- **INPE – Programa Queimadas**: dados de focos de calor via satélite.  
+- **INMET – Instituto Nacional de Meteorologia**: chuvas, temperatura e umidade no Ceará.  
+- **MapBiomas** ( alertas de desmatamento de vegetação nativa em todos os biomas brasileiros)
 
-2. **Tratamento (Python)**
-   - Limpeza dos dados (valores faltantes, formatação de datas).  
-   - Criação de variáveis adicionais:
-     - Nº de focos por município/ano.  
-     - Tendência de aumento/diminuição.  
-     - Relação focos x período de seca.
+---
 
-3. **Integração com Power BI**
-   - Exportar os dados tratados pelo Python (CSV ou conexão direta com banco).  
-   - Criar painéis com:
-     - 📊 Séries temporais (focos de calor ao longo dos anos).  
-     - 🗺️ Mapas do Ceará com hotspots das queimadas.  
-     - 📉 Correlação entre chuvas e queimadas.  
-     - 📌 Ranking dos municípios mais afetados.
+## ⚙️ Etapas Técnicas
 
-### 📊 Resultado Esperado
-Dashboard em Power BI que qualquer pessoa pode interagir e entender:
+### 1. Coleta de Dados (Python)
+- Extrair dados da **API do INPE Queimadas** para focos ativos no Ceará.  
+- Organizar e tratar informações com `pandas` ou `polars` (data, localização geográfica, intensidade).  
+- Coletar dados climáticos do **INMET** para análise de correlação entre seca/chuva e incêndios.
+
+### 2. Tratamento de Dados (Python)
+- Limpeza de dados: valores faltantes, formatação de datas.  
+- Criação de variáveis adicionais:
+  - Número de focos por município/ano.  
+  - Tendência de aumento/diminuição.  
+  - Relação entre focos de queimadas e períodos de seca.
+
+### 3. Integração com Power BI
+- Exportação dos dados tratados (CSV ou conexão direta com banco de dados).  
+- Criação de dashboards interativos:
+  - 📊 Séries temporais: evolução dos focos de calor.  
+  - 🗺️ Mapas do Ceará com hotspots de queimadas.  
+  - 📉 Correlação entre chuvas e incêndios.  
+  - 📌 Ranking dos municípios mais afetados.
+
+---
+
+## 📊 Resultado Esperado
+Dashboard interativo em Power BI, permitindo identificar:
 
 - Onde ocorrem mais queimadas no Ceará.  
-- Como elas variam ao longo do ano.  
-- Relação entre seca/chuva e os incêndios.
+- Variação ao longo do ano.  
+- Relação entre seca/chuva e incêndios.  
 
+---
