@@ -15,7 +15,6 @@ Desenvolver um **sistema de monitoramento interativo de queimadas** no Ceará, u
 - Identificar áreas mais afetadas por queimadas.  
 - Acompanhar evolução temporal (ano a ano, mês a mês).  
 - Relacionar queimadas com variáveis climáticas (chuva, seca, temperatura).  
-- Apoiar conscientização ambiental e políticas públicas.
 
 ---
 
