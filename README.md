@@ -73,18 +73,19 @@ Ajuste conforme o seu repositório real:
    cd queimadas-ceara-analytics
    ```
 
-   ```bash
+```bash
 python -m venv .venv
-   ```
+```
+
 # Windows
-   ```bash
+```bash
 .venv\Scripts\activate
-   ```
+```
 # Linux/Mac
-   ```bash
+```bash
 # source .venv/bin/activate
-   ```
-   ```bash
+```
+```bash
 pip install -r requirements.txt
-   ```
+```
 
