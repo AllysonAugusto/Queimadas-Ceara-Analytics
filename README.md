@@ -22,7 +22,7 @@ e com a dinâmica dos biomas.
 
 ---
 
-## 🔍 Objetivos
+## Objetivos
 
 - Monitorar a distribuição espacial e temporal de queimadas no Ceará.
 - Comparar o comportamento do Ceará com outros estados brasileiros.
@@ -32,7 +32,7 @@ e com a dinâmica dos biomas.
 
 ---
 
-## 🧰 Stack Tecnológica
+## Stack Tecnológica
 
 - **Python** – organização e preparação dos dados (INPE, INMET, MapBiomas).
 - **Pandas / Jupyter** – limpeza, junção e exportação para `.csv`.
@@ -63,7 +63,7 @@ Ajuste conforme o seu repositório real:
 └── README.md
 
 
-## ▶️ Como executar
+## Como executar
 
 1. **Clonar o repositório**
 
