@@ -61,6 +61,7 @@ Ajuste conforme o seu repositório real:
 │   └── queimadas_ceara.pbix   # arquivo principal do Power BI
 ├── requirements.txt
 └── README.md
+   ```
 
 
 ## Como executar
