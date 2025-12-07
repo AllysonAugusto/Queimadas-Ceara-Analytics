@@ -51,13 +51,13 @@ Ajuste conforme o seu repositório real:
 
 ```text
 .
-├── dados/
-│   ├── inpe/             # dados brutos do INPE (coletados via scripts Python)
-│   ├── inmet/            # dados brutos do INMET (coletados via scripts Python)
-│   └── outros/           # arquivos coletados manualmente (ex.: MapBiomas)
-├── imagens/              # figuras e prints dos dashboards
-├── src/                  # scripts Python de tratamento e coleta
-├── powerbi/
+
+├── src/         
+│   ├── dados/            
+│   ├── dados_ceara/            
+│   └── outras_fontes/           # arquivos coletados manualmente (ex.: MapBiomas)
+|   └── dados_INMET            # dados brutos do INMET (coletados via scripts Python)
+|   └── dados_INPE             # dados brutos do INPE (coletados via scripts Python)
 │   └── queimadas_ceara.pbix   # arquivo principal do Power BI
 ├── requirements.txt
 └── README.md
