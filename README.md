@@ -1,60 +1,89 @@
-# Queimadas Ceará Analytics
+# queimadas-ceara-analytics
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![PowerBI](https://img.shields.io/badge/PowerBI-suportado-orange)
 
-![Capa do Projeto](./imagens/capa_powerbi.png)  
-*Visualização de monitoramento interativo das queimadas no Ceará.*
+## Monitoramento de Queimadas e Impactos Ambientais no Ceará
+
+Este repositório reúne scripts em Python e um relatório Power BI usados para
+monitorar as queimadas no estado do Ceará e compará-las com o restante do Brasil.
+A partir dos dados do INPE, INMET e MapBiomas são calculados, por exemplo:
+
+- séries temporais de focos de queimadas por dia, mês e ano;
+- médias diárias de focos e número de dias secos no período;
+- chuva total e chuva média em cada recorte de tempo;
+- participação do Ceará no total de focos do Brasil (% e ranking entre os estados);
+- área queimada por bioma, com destaque para a Caatinga.
+
+Com esses indicadores, o projeto permite acompanhar a evolução das queimadas no CE,
+comparar o estado com outros estados brasileiros e relacionar os focos com o clima
+e com a dinâmica dos biomas.
 
 ---
 
-## 🎯 Objetivo do Projeto
-Desenvolver um **sistema de monitoramento interativo de queimadas** no Ceará, utilizando **Python** para coleta e tratamento de dados e **Power BI** para visualização, permitindo:
+## 🔍 Objetivos
 
-- Identificar áreas mais afetadas por queimadas.  
-- Acompanhar evolução temporal (ano a ano, mês a mês).  
-- Relacionar queimadas com variáveis climáticas (chuva, seca, temperatura).  
-- Apoiar conscientização ambiental e políticas públicas.
-
----
-
-## 🔹 Fontes de Dados
-- **INPE – Programa Queimadas**: dados de focos de calor via satélite.  
-- **INMET – Instituto Nacional de Meteorologia**: chuvas, temperatura e umidade no Ceará.  
-- **MapBiomas** ( alertas de desmatamento de vegetação nativa em todos os biomas brasileiros)
+- Monitorar a distribuição espacial e temporal de queimadas no Ceará.
+- Comparar o comportamento do Ceará com outros estados brasileiros.
+- Relacionar focos de queimadas com variáveis climáticas (chuva, dias secos).
+- Avaliar a participação da Caatinga na área queimada total dos biomas brasileiros.
+- Disponibilizar dashboards interativos e reprodutíveis.
 
 ---
 
-## ⚙️ Etapas Técnicas
+## 🧰 Stack Tecnológica
 
-### 1. Coleta de Dados (Python)
-- Extrair dados da **API do INPE Queimadas** para focos ativos no Ceará.  
-- Organizar e tratar informações com `pandas` ou `polars` (data, localização geográfica, intensidade).  
-- Coletar dados climáticos do **INMET** para análise de correlação entre seca/chuva e incêndios.
-
-### 2. Tratamento de Dados (Python)
-- Limpeza de dados: valores faltantes, formatação de datas.  
-- Criação de variáveis adicionais:
-  - Número de focos por município/ano.  
-  - Tendência de aumento/diminuição.  
-  - Relação entre focos de queimadas e períodos de seca.
-
-### 3. Integração com Power BI
-- Exportação dos dados tratados (CSV ou conexão direta com banco de dados).  
-- Criação de dashboards interativos:
-  - 📊 Séries temporais: evolução dos focos de calor.  
-  - 🗺️ Mapas do Ceará com hotspots de queimadas.  
-  - 📉 Correlação entre chuvas e incêndios.  
-  - 📌 Ranking dos municípios mais afetados.
+- **Python** – organização e preparação dos dados (INPE, INMET, MapBiomas).
+- **Pandas / Jupyter** – limpeza, junção e exportação para `.csv`.
+- **Power BI Desktop** – modelagem de dados, criação de medidas DAX e dashboards.
+- **Fontes oficiais**:
+  - INPE – Programa Queimadas (focos de calor por estado e por coordenada).
+  - INMET – séries de precipitação e variáveis meteorológicas para o Ceará.
+  - MapBiomas – área queimada por bioma e dados de desmatamento  
+    *(coletados manualmente no site oficial e salvos na pasta `dados/outros`)*.
 
 ---
 
-## 📊 Resultado Esperado
-Dashboard interativo em Power BI, permitindo identificar:
+## 📂 Estrutura do projeto
 
-- Onde ocorrem mais queimadas no Ceará.  
-- Variação ao longo do ano.  
-- Relação entre seca/chuva e incêndios.  
+Ajuste conforme o seu repositório real:
 
----
+```text
+.
+├── dados/
+│   ├── inpe/             # dados brutos do INPE (coletados via scripts Python)
+│   ├── inmet/            # dados brutos do INMET (coletados via scripts Python)
+│   └── outros/           # arquivos coletados manualmente (ex.: MapBiomas)
+├── imagens/              # figuras e prints dos dashboards
+├── src/                  # scripts Python de tratamento e coleta
+├── powerbi/
+│   └── queimadas_ceara.pbix   # arquivo principal do Power BI
+├── requirements.txt
+└── README.md
+
+
+## ▶️ Como executar
+
+1. **Clonar o repositório**
+
+   ```bash
+   git clone https://github.com/<seu-usuario>/queimadas-ceara-analytics.git
+   cd queimadas-ceara-analytics
+   ```
+
+   ```bash
+python -m venv .venv
+   ```
+# Windows
+   ```bash
+.venv\Scripts\activate
+   ```
+# Linux/Mac
+   ```bash
+# source .venv/bin/activate
+   ```
+   ```bash
+pip install -r requirements.txt
+   ```
+
