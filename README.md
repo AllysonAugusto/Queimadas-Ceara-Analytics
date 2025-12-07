@@ -4,6 +4,9 @@
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![PowerBI](https://img.shields.io/badge/PowerBI-suportado-orange)
 
+![Capa do Projeto](./imagens/capa_powerbi.png)  
+*Capa do Projeto.*
+
 ## Monitoramento de Queimadas e Impactos Ambientais no Ceará
 
 Este repositório reúne scripts em Python e um relatório Power BI usados para
