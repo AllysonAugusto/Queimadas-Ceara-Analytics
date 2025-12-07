@@ -32,7 +32,7 @@ e com a dinâmica dos biomas.
 
 ---
 
-## Stack Tecnológica
+## Stack
 
 - **Python** – organização e preparação dos dados (INPE, INMET, MapBiomas).
 - **Pandas / Jupyter** – limpeza, junção e exportação para `.csv`.
